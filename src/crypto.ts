@@ -30,7 +30,7 @@ export function setEncryptionCrypto(c: Crypto): void {
  * @param data Serializable data to encrypt.
  * @returns Encrypted data, as Iron formatted string.
  */
-export async function encrypt(data: unknown): Promise<string> {
+export async function encrypt<T extends unknown>(data: T): Promise<string> {
   if (!secret) throw new Error('kiyoi: encryption secret is not set')
   return await Iron.seal(crypto, data, secret, Iron.defaults)
 }
@@ -44,7 +44,7 @@ export async function encrypt(data: unknown): Promise<string> {
  * @param data Encrypted data, as Iron formatted string.
  * @returns Decrypted data.
  */
-export async function decrypt(data: string): Promise<unknown> {
+export async function decrypt<T extends unknown = unknown>(data: string): Promise<T> {
   if (!secret) throw new Error('kiyoi: encryption secret is not set')
-  return (await Iron.unseal(crypto, data, secret, Iron.defaults)) as unknown
+  return (await Iron.unseal(crypto, data, secret, Iron.defaults)) as T
 }

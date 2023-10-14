@@ -1,0 +1,27 @@
+{
+  "name": "kiyoi",
+  "module": "index.ts",
+  "type": "module",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": ""
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.28",
+    "bun-types": "^1.0.6",
+    "next": "^13.5.4",
+    "react": "^18.2.0",
+    "swr": "^2.2.4",
+    "typescript": "^5.2.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0",
+    "react": "^18",
+    "swr": "^2"
+  },
+  "dependencies": {
+    "iron-webcrypto": "^0.10.1",
+    "nanoid": "^5.0.1"
+  }
+}

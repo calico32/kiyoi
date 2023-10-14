@@ -4,6 +4,20 @@
   "type": "module",
   "version": "0.1.0",
   "license": "MIT",
+  "files": [
+    "dist",
+    "!dist/*.tsbuildinfo"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./*": {
+      "types": "./dist/*.d.ts",
+      "import": "./dist/*.js"
+    }
+  },
   "scripts": {
     "build": ""
   },

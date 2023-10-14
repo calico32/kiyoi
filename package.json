@@ -2,7 +2,7 @@
   "name": "kiyoi",
   "module": "index.ts",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "files": [
     "dist",
@@ -23,7 +23,8 @@
     "./README.md": null
   },
   "scripts": {
-    "build": ""
+    "build": "tsc",
+    "prepack": "npm run build"
   },
   "devDependencies": {
     "@types/react": "^18.2.28",

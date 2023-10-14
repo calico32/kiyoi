@@ -23,10 +23,6 @@ type Intersect<U> = (U extends any ? (k: U) => void : never) extends (k: infer I
   ? I
   : never
 
-type Combine<U> = {
-  [K in keyof U]: U[K]
-}
-
 /**
  * Any valid session data.
  */

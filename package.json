@@ -16,7 +16,11 @@
     "./*": {
       "types": "./dist/*.d.ts",
       "import": "./dist/*.js"
-    }
+    },
+    "./dist/*": null,
+    "./package.json": null,
+    "./LICENSE": null,
+    "./README.md": null
   },
   "scripts": {
     "build": ""

@@ -5,8 +5,8 @@ import type {
   ResponseCookie,
   ResponseCookies,
 } from 'next/dist/compiled/@edge-runtime/cookies'
-import { Enum } from './enum'
-import { Result } from './result'
+import { Enum } from './enum.js'
+import { Result } from './result.js'
 
 let sessionName = 'session'
 

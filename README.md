@@ -18,4 +18,4 @@ bun add kiyoi
 - `kiyoi/nextjs`: `mergeCookies`.
 - `kiyoi/result`: `Result<T, E>`, `Result.ok()`, and `Result.error()`, as well as matchers.
 - `kiyoi/session`: `Session.get()`, `Session.save()`, and `Session.destroy()`, using Iron, plus plugins and validators.
-- `kiyoi/use`: `use()`, a server-action-to-SWR hook.
+- `kiyoi/client`: `use()`, a server-action-to-SWR hook, and `Actions()`, a wrapper for action-based APIs.

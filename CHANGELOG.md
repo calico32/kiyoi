@@ -1,3 +1,7 @@
+# 0.3.0
+
+- feat: `Actions()` wrapper for action-based APIs
+
 # 0.2.0
 
 - feat: generic `encrypt()` and `decrypt()`

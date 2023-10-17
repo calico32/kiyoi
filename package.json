@@ -1,12 +1,16 @@
 {
   "name": "kiyoi",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "license": "MIT",
   "files": [
     "dist",
     "!dist/*.tsbuildinfo"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calico32/kiyoi.git"
+  },
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "exports": {

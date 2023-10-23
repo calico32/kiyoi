@@ -1,3 +1,7 @@
+# 0.3.1
+
+- imp: `Actions()` methods prefixed with `$` to avoid name collisions
+
 # 0.3.0
 
 - feat: `Actions()` wrapper for action-based APIs
